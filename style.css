@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+/* Background colorido */
+body {
+    background-color: #FDE8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Alinhar elementos verticalmente */
+    position: relative; /* Para que a div azul fique no fundo */
+}
+
+.blue-background {
+    width: 80%;
+    height: 85%;
+    background: #2E2A57; /* Cor de fundo azul */
+    position: absolute;
+    z-index: 1; /* Para que fique atrás do container */
+    left: 8.5%;
+    top: 10%
+}
+
+.aba {
+    width: 80%;
+    height: 10%;
+    background: #b38cf6; /* Cor de fundo azul */
+    position: absolute;
+    z-index: 1; /* Para que fique atrás do container */
+    left: 10%;
+    z-index: 4;
+    border: 3px solid #000;
+    top: 6%
+    
+   
+}
+
+.click1 {
+    width: 4%;
+    height: 7%;
+    background: #FECEF9; 
+    position: absolute;
+    z-index: 1; /* Para que fique atrás do container */
+    left: 85%;
+    z-index: 4;
+    border: 3px solid #000;
+    top: 7.5%
+}
+
+.click2 {
+    width: 4%;
+    height: 7%;
+    background: #FECEF9; 
+    position: absolute;
+    z-index: 1; /* Para que fique atrás do container */
+    left: 80%;
+    z-index: 4;
+    border: 3px solid #000;
+    top: 7.5%
+}
+
+.click3 {
+    width: 4%;
+    height: 7%;
+    background: #FECEF9; 
+    position: absolute;
+    z-index: 1; /* Para que fique atrás do container */
+    left: 75%;
+    z-index: 4;
+    border: 3px solid #000;
+    top: 7.5%
+}
+
+.container {
+    width: 80%;
+    height: 85%;
+    border: 3px solid #000;
+    background: #FFFBFE;
+    position: relative;
+    z-index: 2; /* Container à frente */
+    margin-bottom: 20px; /* Espaço entre os containers */
+}
+
+/* Restante do seu CSS... */
+
+
+
+img {
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    width: 35%;
+    z-index: 3; /* Imagem à frente de todos */
+    max-width: 60%;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 500%;
+    color: #ef20c6e0;
+    z-index: 3; /* Título à frente de todos */
+    flex-shrink: 0;
+}
+
+.btn, .btn2 {
+    padding: 8px 14px;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 0 rgb(255, 102, 102), 4px 4px 0 0 black;
+    position: absolute;
+    top: 65%;
+    left: 41%;
+    width: 15%;
+    height: 6%;
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3; /* Botões à frente de todos */
+}
+
+.btn2 {
+    top: 75%;
+}
+
+.btn:hover, .btn2:hover {
+    box-shadow: 3px 3px rgb(255, 102, 102), 6px 6px 0 0 black;
+    transform: translate(-2px, -2px);
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajustar largura para telas menores */
+    }
+
+    h1 {
+        font-size: 4vw; /* Ajustar o tamanho da fonte para telas menores */
+    }
+
+    .btn, .btn2 {
+        padding: 1.5vw 3vw; /* Ajustar o padding para telas menores */
+        top: 40%; /* Ajustar a posição vertical dos botões para telas menores */
+    }
+
+    .btn2 {
+        top: 50%;
+    }
+}
