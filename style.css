@@ -126,11 +126,9 @@ h1 {
     z-index: 3; /* Botões à frente de todos */
 }
 
-.btn2 {
-    top: 75%;
-}
 
-.btn:hover, .btn2:hover {
+
+.btn:hover{
     box-shadow: 3px 3px rgb(255, 102, 102), 6px 6px 0 0 black;
     transform: translate(-2px, -2px);
 }
@@ -143,12 +141,10 @@ h1 {
         font-size: 4vw; /* Ajustar o tamanho da fonte para telas menores */
     }
 
-    .btn, .btn2 {
+    .btn{
         padding: 1.5vw 3vw; /* Ajustar o padding para telas menores */
         top: 40%; /* Ajustar a posição vertical dos botões para telas menores */
     }
 
-    .btn2 {
-        top: 50%;
-    }
+    
 }
